@@ -32,7 +32,7 @@ def main():
     st.title("Sentimental Prediction")
 
     st.text('This app is an sentemantal analysis project. For detail information follow the below link.')
-    link = '[GitHub](https://github.com/serdarkuyuk/spam2finder/blob/master/spamClassifierTfIDF.ipynb)'
+    link = '[GitHub](https://github.com/serdarkuyuk/nlpSentimentAnalysis/blob/main/SentimentalAnalysisProject.ipynb)'
     st.markdown(link, unsafe_allow_html=True)
     #st.text_input("Text-Email", "Type your email here.")
     st.header('Try this two sentence')
