@@ -1,7 +1,6 @@
 import pickle
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
-#from flask import Flask, request, jsonify, render_template
 import streamlit as st
 import spacy
 from build_library.utils import customNlp
@@ -45,12 +44,13 @@ def main():
         output = predictionFunction(inputText)
         if output == 1.0:
             st.success('This text has positive feeling')
-            # st.text(output)
-            #st.markdown('This email seems to be ** _normal_ email **')
+
         else:
             st.error('This text has negative feeling')
-            # st.text(output)
+
         return output
+
+    st.text('if you like it please send an email to serdarkuyuk@gmail.com')
 
     # return render_template('index.html')
 if __name__ == '__main__':
